@@ -15,14 +15,10 @@ This will execute the setup.py file and insure that its pip-specific commands ar
 """
 
 
-# Use numpy to build the f2py fortran extension
 # --------------------------------    
-import setuptools
-from numpy.distutils.core import Extension, setup
-
-
+# Use setuptools to build the fortran extension
 # Always prefer setuptools over distutils
-from setuptools import  find_packages
+from setuptools import find_packages, Extension, setup
 
 # To use a consistent encoding
 from codecs import open
